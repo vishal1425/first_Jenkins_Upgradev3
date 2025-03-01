@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'maven:latest'
-            args 'sudo'
+            args '-u root'
         }
     }
     
